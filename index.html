@@ -370,11 +370,7 @@ the training dataset. Although the FG-DM is only trained to associate persons wi
  semantic maps segments, it also assigns the chimp, a class that it was not trained on, 
  to that color. This shows that the FG-DM can integrate the prior knowledge by SD that
   “chimps and persons are similar" into the
-segmentation task. Conversely, the similarity between chimps and people might induce SD 
-to synthesize a chimp in response to a prompt for people, or vice-versa. This is shown in the 
-bottom left of the Figure where the FG-DM correctly synthesizes different colors for the chimp 
-and the person, but the ControlNet fails. While the black box nature of SD makes these errors opaque,
- the FG-DM allows inspection of the intermediate conditions to understand these hallucinations. 
+segmentation task. The FG-DM allows inspection of the intermediate conditions to understand these hallucinations. 
  This illustrates its benefits in terms of explainability.
                 </p>
                 <img src="./static/images/teaser_all.png"
